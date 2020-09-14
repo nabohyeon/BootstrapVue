@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Board from '@/components/Board'
 
 Vue.use(VueRouter)
 
@@ -19,11 +18,7 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/About.vue')
     },
-    {
-        path: '/board/free',
-        name: 'Board',
-        component: Board
-    }
+
 ]
 
 const router = new VueRouter({
